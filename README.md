@@ -10,29 +10,19 @@ A pre-lint tools for power apps.
 Build the app locally.
 
 ##### `cargo run`
-Run the lint command for yaml file under this folder.
+Run the lint command for `all` the yaml file under this folder.
 
 ##### `cargo run xxx`
 Run other command if needed. (not finish yet)
 
 ##### `cargo run lint xxx`
-Only run the lint command for xxx.yaml file. (not finish yet)
-
-## About file path
->for now need to config it manually in `analysis_yaml` function
-
-##### Windows
-```
-    let contents = fs::read_to_string("..\\Screen1.fx.yaml")?;
-```
-
-##### Mac
-```
-    let contents = fs::read_to_string("Screen1.fx.yaml")?;
-```
+Only run the lint command for xxx.yaml file. 
 
 ## To do list
-- [ ] Support multiple file path. (for now the yaml path is hardcoded in `analysis_yaml` function)
-- [ ] Support command `cargo run xxx` and `cargo run lint xxx`
-- [ ] add tests
+- [x] Support multiple file path. (for now the yaml path is hardcoded in `analysis_yaml` function)
+- [x] Support command `cargo run xxx` and `cargo run lint xxx`
+- [ ] Do key check for yaml file
+- [ ] Variable naming grammer checking
+- [ ] Code implementation verification
+- [ ] Add tests
 - [ ] etc...
