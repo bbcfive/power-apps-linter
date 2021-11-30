@@ -5,23 +5,33 @@ A pre-lint tools for power apps.
 
 - [Rust](https://www.rust-lang.org/)
   
-## Available Scripts
-##### `cargo build`
-Build the app locally.
-
+## Get started
 ##### `cargo run`
 Run the lint command for `all` the yaml file under this folder.
 
+##### `cargo build`
+Build the app locally.
+
 ##### `cargo run xxx`
-Run other command if needed. (not finish yet)
+Run other command if needed(default command is lint).
 
 ##### `cargo run lint xxx`
 Only run the lint command for xxx.yaml file. 
 
-## To do list
+## Disable checking for next line
+Add this comments in yaml file, lint checking will skip the next line
+```
+# disable checking for next line
+here some keys  // this line will be ignored
+```
+
+## To contribute
 - [x] Support multiple file path. (for now the yaml path is hardcoded in `analysis_yaml` function)
 - [x] Support command `cargo run xxx` and `cargo run lint xxx`
-- [ ] Do key check for yaml file
+- [x] Do key duplication checking for yaml file
+- [x] Tips for line, file of the warnings 
+- [x] Add `Disable lint checking for next line`
+- [x] Add upperCamelCase
 - [ ] Variable naming grammer checking
 - [ ] Code implementation verification
 - [ ] Add tests
