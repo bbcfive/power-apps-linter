@@ -25,6 +25,18 @@ Add this comments in yaml file, lint checking will skip the next line
 here some keys  // this line will be ignored
 ```
 
+## About file path
+>for now need to config it manually in `lint_checking` function
+##### Windows
+```
+    let standards = json_from_file(".\\standard.json");
+```
+
+##### Mac
+```
+    let standards = json_from_file("standard.json");
+```
+
 ## To contribute
 - [x] Support multiple file path. (for now the yaml path is hardcoded in `analysis_yaml` function)
 - [x] Support command `cargo run xxx` and `cargo run lint xxx`

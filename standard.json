@@ -1,0 +1,8 @@
+{
+  "WordAbbreviation": {
+      "button": "btn",
+      "label": "lbl",
+      "toggle": "tgl",
+      "groups": "grp"
+  }
+}
